@@ -2,10 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PublicRoutingModule } from './public-routing.module';
+import { LoginComponent } from './modules/login/login.component';
+import { PublicComponent } from './modules/public/public.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    LoginComponent,
+    PublicComponent
+  ],
   imports: [
     CommonModule,
     PublicRoutingModule
