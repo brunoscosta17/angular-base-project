@@ -6,16 +6,16 @@ import { LoadingComponent } from 'src/app/shared/components/loading/loading.comp
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { LoadingService } from 'src/app/core/services/loading.service';
 import { HttpLoadingInterceptor } from 'src/app/core/interceptors/http-loading.interceptor';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
-  declarations: [
-    LoadingComponent
-  ],
+  declarations: [],
   imports: [
     CommonModule,
     PrivateRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [
     LoadingService,
